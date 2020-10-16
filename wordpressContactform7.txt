@@ -1,0 +1,50 @@
+フォーム
+
+<label> お名前 (必須)
+    [text* your-name] </label>
+
+<label> メールアドレス (必須)
+    [email* your-email] </label>
+
+<label> 題名
+    [text your-subject] </label>
+
+
+<label> 坪数　</label>
+[select* menu-258 "〜30坪" "〜50坪" "〜70坪" "100坪〜"]
+
+<label> 塗装部位　</label>
+[select* menu-371 "外壁塗装" "屋根塗装" "外壁と屋根"]
+
+<label> 何階建てか　</label>
+[select* menu-372 "平家" "2階建" "3階建" "4階建以上"]
+
+<label> 何社の見積もりか　</label>
+[select* menu-373 "3" "5" "7"]
+
+<label> 見積もり期限　</label>
+[select* menu-375 "1週間" "2週間" "1ヶ月"]
+
+<label> 
+    [textarea your-message] </label>
+
+[submit "送信"]
+
+
+メール＞メッセージ本文
+
+差出人: [your-name] <[your-email]>
+題名: [your-subject]
+
+
+メッセージ本文:
+[menu-258]
+[menu-371]
+[menu-372]
+[menu-373]
+[menu-375]
+[your-message]
+
+
+-- 
+このメールは ウマボーノ生活お役立ちアイテム (https://kobearen.xsrv.jp/umabooon) のお問い合わせフォームから送信されました
